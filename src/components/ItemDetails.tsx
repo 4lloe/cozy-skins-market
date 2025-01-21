@@ -39,12 +39,12 @@ export const ItemDetails = ({ isOpen, onClose, item }: ItemDetailsProps) => {
               <p className="text-sm text-gray-500">Float: {item.float}</p>
               <p className="text-2xl font-bold text-purple-800">${item.price.toFixed(2)}</p>
               <Button className="w-full bg-purple-600 hover:bg-purple-700">
-                Purchase Now
+                Sell Now
               </Button>
             </div>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4">Market History</h3>
+            <h3 className="text-lg font-semibold mb-4">Price History</h3>
             <ResponsiveContainer width="100%" height={200}>
               <LineChart data={marketData}>
                 <XAxis dataKey="date" />
