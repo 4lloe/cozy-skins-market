@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Google, Steam } from "lucide-react";
+import { LogIn } from "lucide-react";
 
 const LoginForm = () => {
   return (
@@ -15,6 +15,7 @@ const LoginForm = () => {
             <Input type="password" placeholder="Password" className="w-full" />
           </div>
           <Button className="w-full bg-purple-600 hover:bg-purple-700">
+            <LogIn className="mr-2 h-4 w-4" />
             Sign In
           </Button>
         </form>
@@ -28,11 +29,11 @@ const LoginForm = () => {
         </div>
         <div className="grid grid-cols-2 gap-4">
           <Button variant="outline" className="w-full">
-            <Google className="mr-2 h-4 w-4" />
+            <img src="/google.svg" alt="Google" className="mr-2 h-4 w-4" />
             Google
           </Button>
           <Button variant="outline" className="w-full">
-            <Steam className="mr-2 h-4 w-4" />
+            <img src="/steam.svg" alt="Steam" className="mr-2 h-4 w-4" />
             Steam
           </Button>
         </div>
@@ -41,4 +42,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export { LoginForm };

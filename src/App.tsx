@@ -8,6 +8,8 @@ import Marketplace from "./pages/Marketplace";
 import Profile from "./pages/Profile";
 import News from "./pages/News";
 import About from "./pages/About";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +25,8 @@ const App = () => (
           <Route path="/profile" element={<Profile />} />
           <Route path="/news" element={<News />} />
           <Route path="/about" element={<About />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
