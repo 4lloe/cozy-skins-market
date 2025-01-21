@@ -1,7 +1,7 @@
 import { Header } from "@/components/Header";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CreditCard, Wallet, LogOut, Steam } from "lucide-react";
+import { CreditCard, Wallet, LogOut } from "lucide-react";
 import { ItemCard } from "@/components/ItemCard";
 
 const inventoryItems = [
@@ -77,7 +77,7 @@ const Profile = () => {
               <h2 className="text-2xl font-bold text-gray-900">Inventory</h2>
               <div className="flex gap-4">
                 <Button className="flex items-center gap-2 bg-[#171a21] hover:bg-[#2a475e]">
-                  <Steam className="h-4 w-4" />
+                  <img src="/steam.svg" alt="Steam" className="h-4 w-4" />
                   Connect Steam
                 </Button>
                 <Button variant="outline" className="flex items-center gap-2">
