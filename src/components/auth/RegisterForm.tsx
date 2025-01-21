@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { UserPlus } from "lucide-react";
+import { UserPlus, LogIn } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const RegisterForm = () => {
   return (
@@ -22,6 +23,14 @@ const RegisterForm = () => {
             Sign Up
           </Button>
         </form>
+        <div className="text-center">
+          <Link to="/login">
+            <Button variant="ghost" className="text-purple-600">
+              <LogIn className="mr-2 h-4 w-4" />
+              Already have an account? Login
+            </Button>
+          </Link>
+        </div>
         <div className="relative">
           <div className="absolute inset-0 flex items-center">
             <div className="w-full border-t border-gray-300"></div>

@@ -1,5 +1,11 @@
-import { User, ShoppingBag, Newspaper, Info } from "lucide-react";
+import { User, ShoppingBag, Newspaper, Info, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export const Header = () => {
   return (
@@ -23,9 +29,20 @@ export const Header = () => {
               </Link>
             </nav>
           </div>
-          <Link to="/profile" className="p-2 hover:bg-purple-100 rounded-full transition-colors">
-            <User className="h-6 w-6 text-purple-800" />
-          </Link>
+          <div className="flex items-center space-x-4">
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center text-gray-700 hover:text-purple-600">
+                EN <ChevronDown className="ml-1 h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem>English</DropdownMenuItem>
+                <DropdownMenuItem>Русский</DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+            <Link to="/profile" className="p-2 hover:bg-purple-100 rounded-full transition-colors">
+              <User className="h-6 w-6 text-purple-800" />
+            </Link>
+          </div>
         </div>
       </div>
     </header>

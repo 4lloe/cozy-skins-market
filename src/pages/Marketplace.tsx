@@ -16,7 +16,20 @@ const SAMPLE_ITEMS = [
     price: 89.99,
     image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80"
   },
-  // Add more sample items as needed
+  {
+    id: 3,
+    name: "AWP | Dragon Lore",
+    float: "0.01",
+    price: 1500.00,
+    image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80"
+  },
+  {
+    id: 4,
+    name: "Desert Eagle | Blaze",
+    float: "0.03",
+    price: 420.69,
+    image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80"
+  }
 ];
 
 const Marketplace = () => {

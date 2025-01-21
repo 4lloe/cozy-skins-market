@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { Card } from "@/components/ui/card";
-import { CreditCard, Wallet } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { CreditCard, Wallet, LogOut } from "lucide-react";
 
 const Profile = () => {
   return (
@@ -8,16 +9,22 @@ const Profile = () => {
       <Header />
       <main className="container mx-auto px-4 pt-24">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center space-x-6 mb-8">
-            <img
-              src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
-              alt="Profile"
-              className="w-24 h-24 rounded-full object-cover border-4 border-primary-light"
-            />
-            <div>
-              <h1 className="text-3xl font-bold text-gray-900">John Doe</h1>
-              <p className="text-gray-600">Member since 2024</p>
+          <div className="flex items-center justify-between mb-8">
+            <div className="flex items-center space-x-6">
+              <img
+                src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
+                alt="Profile"
+                className="w-24 h-24 rounded-full object-cover border-4 border-primary-light"
+              />
+              <div>
+                <h1 className="text-3xl font-bold text-gray-900">John Doe</h1>
+                <p className="text-gray-600">Member since 2024</p>
+              </div>
             </div>
+            <Button variant="destructive" className="flex items-center gap-2">
+              <LogOut className="h-4 w-4" />
+              Logout
+            </Button>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
